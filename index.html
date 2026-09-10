@@ -3,6 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- =================================================================
+     PRÉVIA DO LINK (WhatsApp, Facebook, Instagram, Twitter)
+     Precisa ficar AQUI no <head> real: o robô de prévia não executa
+     JavaScript, então não enxerga o que está dentro do <helmet>.
+     As URLs precisam ser ABSOLUTAS — caminho relativo é descartado.
+     O arquivo og-gsx.png fica na RAIZ do repositório.
+     Trocou de domínio? Ajuste as 4 linhas com https:// abaixo.
+     ================================================================= -->
+<title>Desmonte GSX Veículos | Peças de Reposição Testadas e com Garantia</title>
+<meta name="description" content="Peça de desmonte testada na bancada, com garantia e preço justo. Manda o modelo do carro no WhatsApp que a gente confere no estoque e responde com foto e valor." />
+<link rel="canonical" href="https://gsxdesmonte.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Desmonte GSX Veículos" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:title" content="Desmonte GSX Veículos | Peça testada, com garantia" />
+<meta property="og:description" content="Manda o modelo do carro. A gente acha a peça, testa e entrega com garantia." />
+<meta property="og:url" content="https://gsxdesmonte.com/" />
+<meta property="og:image" content="https://gsxdesmonte.com/og-gsx.png" />
+<meta property="og:image:secure_url" content="https://gsxdesmonte.com/og-gsx.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Desmonte GSX Veículos — peças de reposição testadas" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Desmonte GSX Veículos | Peça testada, com garantia" />
+<meta name="twitter:description" content="Manda o modelo do carro. A gente acha a peça, testa e entrega com garantia." />
+<meta name="twitter:image" content="https://gsxdesmonte.com/og-gsx.png" />
+<meta name="theme-color" content="#07070B" />
+
 <script src="./support.js"></script>
 </head>
 <body>
@@ -10,10 +40,6 @@
 <helmet>
 <title>Desmonte GSX Veículos | Peças de Reposição Testadas e com Garantia</title>
 <meta name="description" content="Peça de desmonte testada na bancada, com garantia e preço justo. Manda o modelo do carro no WhatsApp que a gente confere no estoque e responde com foto e valor." />
-<meta property="og:title" content="Desmonte GSX Veículos | Peça testada, com garantia" />
-<meta property="og:description" content="Manda o modelo do carro. A gente acha a peça, testa e entrega com garantia." />
-<meta property="og:image" content="assets/gsx-hero.jpg" />
-<meta property="og:type" content="website" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <script type="application/ld+json">
@@ -336,7 +362,7 @@
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;553195261237&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5531995261237&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
 class Component extends DCLogic {
   state = {
     scrolled: false, scrollFrac: 0, waVisible: false, isMobile: false, mobileMenuOpen: false,
@@ -505,7 +531,7 @@ class Component extends DCLogic {
   }
 
   renderVals() {
-    const num = (this.props.whatsappNumber || '553195261237').replace(/\D/g, '');
+    const num = (this.props.whatsappNumber || '5531995261237').replace(/\D/g, '');
     const msg = 'Olá, GSX! Estou procurando uma peça. Meu carro é: ';
     const waLink = 'https://wa.me/' + num + '?text=' + encodeURIComponent(msg);
 
